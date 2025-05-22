@@ -1,0 +1,19 @@
+package org.rick.creational.abstract_factory.factory.impl;
+
+import org.rick.creational.abstract_factory.factory.OSAbstractFactory;
+import org.rick.creational.abstract_factory.product.button.IButton;
+import org.rick.creational.abstract_factory.product.button.impl.WindowsButton;
+import org.rick.creational.abstract_factory.product.checkbox.ICheckbox;
+import org.rick.creational.abstract_factory.product.checkbox.impl.WindowsCheckbox;
+
+public class WindowsFactory implements OSAbstractFactory {
+    @Override
+    public IButton createButton() {
+        return new WindowsButton();
+    }
+
+    @Override
+    public ICheckbox createCheckbox() {
+        return new WindowsCheckbox();
+    }
+}
