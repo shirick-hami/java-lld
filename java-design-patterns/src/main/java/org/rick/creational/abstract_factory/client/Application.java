@@ -4,11 +4,11 @@ import org.rick.creational.abstract_factory.factory.OSAbstractFactory;
 import org.rick.creational.abstract_factory.product.button.IButton;
 import org.rick.creational.abstract_factory.product.checkbox.ICheckbox;
 
-public class ApplicationClient {
+public class Application {
     private IButton button;
     private ICheckbox checkbox;
 
-    public ApplicationClient(OSAbstractFactory osAbstractFactory) {
+    public Application(OSAbstractFactory osAbstractFactory) {
         this.button = osAbstractFactory.createButton();
         this.checkbox = osAbstractFactory.createCheckbox();
     }
